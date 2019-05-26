@@ -1,0 +1,2 @@
+# kazgu.github.io
+blog
