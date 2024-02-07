@@ -4,7 +4,7 @@
   function init()
     {
       const params = new URLSearchParams(window.location.search);
-      if params.has('md')
+      if(params.has('md'))
       {
       const myParam = params.get('md');
       document.getElementById('result').innerText=myParam;
