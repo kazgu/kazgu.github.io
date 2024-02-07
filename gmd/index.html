@@ -1,5 +1,5 @@
 <div id="result">hello</div>
-
+ <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
   function init()
     {
@@ -7,9 +7,10 @@
       if(params.has('md'))
       {
       const myParam = params.get('md');
-      document.getElementById('result').innerText=myParam;
+       document.getElementById('result').innerHTML =marked.parse(myParam);
       }
 
     }
   init();
 </script>
+ 
